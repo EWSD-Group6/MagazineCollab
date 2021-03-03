@@ -1,0 +1,13 @@
+$app-dark-primary: mat-palette($mat-deep-orange, 200, 500, 300);
+$app-dark-accent: mat-palette($mat-brown, 200);
+$app-dark-warn: mat-palette($mat-deep-orange, 200);
+
+$app-dark-theme: mat-dark-theme(
+  (
+    color: (
+      primary: $app-dark-primary,
+      accent: $app-dark-accent,
+      warn: $app-dark-warn
+    )
+  )
+);

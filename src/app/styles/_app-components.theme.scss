@@ -1,0 +1,8 @@
+@import '../modules/auth/pages/login/login.page.scss';
+
+// Follow custom theme practice: https://material.angular.io/guide/theming-your-components
+// You have to call all components mixins
+// Ref: https://medium.com/@tomastrajan/the-complete-guide-to-angular-material-themes-4d165a9d24d1
+@mixin custom-components-theme($theme) {
+  @include login-page-theme($theme);
+}

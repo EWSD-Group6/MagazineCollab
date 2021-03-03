@@ -1,0 +1,15 @@
+@mixin login-page-theme($theme) {
+  $primary: map-get($theme, primary);
+
+  .container {
+    padding: 0px;
+
+    .left-panel {
+      background-color: mat-color($primary);
+    }
+
+    .right-panel {
+      padding: 16px;
+    }
+  }
+}

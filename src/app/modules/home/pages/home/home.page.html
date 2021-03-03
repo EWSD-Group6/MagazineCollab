@@ -1,0 +1,6 @@
+<div class="container" *mobxAutorun>
+  <p>home works!</p>
+  <button mat-raised-button (click)="viewmodel.finish()">Finish</button>
+  <app-ready-modal *ngIf="viewmodel.showReady"></app-ready-modal>
+  <app-finish-modal *ngIf="viewmodel.showFinish"></app-finish-modal>
+</div>

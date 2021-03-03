@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.mat-card {
+  overflow: hidden;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 2px 0 10px 0;
+}

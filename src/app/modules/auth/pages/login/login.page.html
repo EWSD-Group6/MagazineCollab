@@ -1,0 +1,28 @@
+<mat-card *mobxAutorun fxFlex ngClass.xs="mat-elevation-z0" class="container">
+  <div fxLayout="row wrap" ngStyle.gt-xs="min-width: 500px;">
+    <div fxFlex="50%" fxFlex.xs="100%" class="left-panel"></div>
+    <div fxFlex="50%" fxFlex.xs="100%" class="right-panel">
+      <form [formGroup]="viewmodel.form" (ngSubmit)="viewmodel.login()">
+        <div fxLayout="column">
+          <mat-card-title style="text-align: center">{{ "Common.Text.Login" | translate }}</mat-card-title>
+          <mat-form-field appearance="outline">
+            <input matInput formControlName="user" placeholder="{{ 'Common.Text.UserName' | translate }}" />
+            <mat-error>{{ viewmodel.errorMessages.user }}</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <input
+              matInput
+              formControlName="password"
+              type="password"
+              placeholder="{{ 'Common.Text.Password' | translate }}"
+            />
+            <mat-error>{{ viewmodel.errorMessages.password }}</mat-error>
+          </mat-form-field>
+          <button mat-raised-button color="primary" [disabled]="viewmodel.form.invalid || viewmodel.loading">
+            {{ "Common.Text.Login" | translate }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</mat-card>

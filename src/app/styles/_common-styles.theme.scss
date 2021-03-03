@@ -1,0 +1,17 @@
+// Make developement is easier by some common styles
+// Ex: you want to set div's background to primary color:
+//   - <div class="primary-bg"></div>
+@mixin common-classes-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  .primary-bg#{if(&, ', &.primary-bg', '')} {
+    background-color: mat-color($primary);
+  }
+
+  .primary-text#{if(&, ', &.primary-text', '')} {
+    color: mat-color($foreground, text);
+  }
+}

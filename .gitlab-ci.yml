@@ -1,0 +1,21 @@
+image: node:15.5.0
+
+stages:
+  - build
+
+before_script:
+  - node -v
+  - npm install
+
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - node_modules/
+
+build:  
+  stage: build
+  script:
+    - npm run lint
+    - npm run build

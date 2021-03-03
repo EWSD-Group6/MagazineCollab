@@ -1,0 +1,22 @@
+// Let styling all default component and material components here
+@mixin common-components-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+
+  a {
+    color: mat-color($foreground, text);
+    &:hover {
+      color: mat-color($accent);
+    }
+  }
+
+  p {
+    a {
+      color: mat-color($accent);
+      &:hover {
+        color: mat-color($accent, darker);
+      }
+    }
+  }
+}

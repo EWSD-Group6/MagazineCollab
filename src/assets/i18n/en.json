@@ -1,0 +1,22 @@
+{
+  "Common": {
+    "Text": {
+      "OK": "OK",
+      "Cancel": "Cancel",
+      "Yes": "Yes",
+      "No": "No",
+      "UserName": "User name",
+      "Password": "Password",
+      "Login": "Login"
+    },
+    "Message": {}
+  },
+  "Auth": {
+    "Common": {},
+    "Login": {}
+  },
+  "Home": {
+    "Common": {},
+    "Setting": {}
+  }
+}
