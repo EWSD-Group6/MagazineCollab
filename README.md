@@ -1,5 +1,4 @@
-# SliRemoteWeb
-
+# MagazineCollab
 You need to install 2 plugins to run eslint:
 - dbaeumer.vscode-eslint
 - esbenp.prettier-vscode
